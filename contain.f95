@@ -1,7 +1,8 @@
 program contains
 character(100)::instring
 print *,'Input string'
-read *,instring
+read (*,'(A)') instring
+
 if (index(instring,'test')<100) then
   if (0<index(instring,'test')) then
     print *,'contains test'
