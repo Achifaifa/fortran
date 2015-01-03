@@ -9,7 +9,7 @@ contains
     type(integer) expo
     integer::temp
     temp=a
-    do i=1,b
+    do i=1,b-1
       temp=temp*a
     end do
     expo=temp
