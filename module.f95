@@ -1,9 +1,17 @@
 module exponentiate
+interface test 
+  module procedure expo
+end interface
+public::expo
 contains
-  function exp(a,b)
-    exp=a
+  function expo(a,b)
+    type(integer), intent(in)::a,b
+    type(integer) expo
+    integer::temp
+    temp=a
     do i=1,b
-      exp=exp*a
+      temp=temp*a
     end do
-  end function exp
+    expo=temp
+  end function expo
 end module exponentiate

@@ -1,7 +1,9 @@
-use exponentiate
-integer::a,b
-write *,'input A'
-read *,a
-write *,'input B'
-read *,b
-write *,exponentiate::exp(a,b)
+program usem
+  use exponentiate
+  integer::a,b
+  print *, 'input A'
+  read *, a
+  print *, 'input B'
+  read *, b
+  print *, expo(a,b)
+end program usem
